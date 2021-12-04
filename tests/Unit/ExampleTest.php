@@ -5,6 +5,11 @@ use WP_Mock\Tools\TestCase;
 
 class ExampleTest extends TestCase
 {
+    public function testMockStaticMethod()
+    {
+        $this->mockStaticMethod(Example::class, 'foo')->andReturnNull();
+    }
+
     /**
      * Backported from PHPUnit 9.4 TestCase class.
      *
