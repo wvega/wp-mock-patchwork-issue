@@ -8,6 +8,8 @@ class ExampleTest extends TestCase
     public function testMockStaticMethod()
     {
         $this->mockStaticMethod(Example::class, 'foo')->andReturnNull();
+
+        $this->assertNull(Example::foo());
     }
 
     /**
