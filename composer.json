@@ -1,14 +1,17 @@
 {
     "name": "wvega/wp-mock-patchwork-issue",
     "type": "project",
-    "require-dev": {
-        "10up/wp_mock": "^0.4.2"
-    },
     "authors": [
         {
             "name": "Willington Vega",
             "email": "wvega@wvega.com"
         }
     ],
-    "require": {}
+    "autoload": {
+        "classmap": ["src"]
+    },
+    "require": {},
+    "require-dev": {
+        "10up/wp_mock": "^0.4.2"
+    }
 }
